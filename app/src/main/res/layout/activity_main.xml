@@ -10,11 +10,12 @@
     <TabHost
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/tabhost">
+        android:id="@android:id/tabhost">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+            <!--맵 등 탭마다 표시되는 화면-->
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -24,11 +25,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
+                    android:background="@color/teal_200"
                     android:id="@+id/map"></LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
+                    android:background="@color/purple_200"
                     android:id="@+id/community"></LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -36,6 +39,7 @@
                     android:orientation="vertical"
                     android:id="@+id/setting"></LinearLayout>
             </FrameLayout>
+            <!--탭 전환할 버튼-->
             <TabWidget
                 android:id="@android:id/tabs"
                 android:layout_width="match_parent"

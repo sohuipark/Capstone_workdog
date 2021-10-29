@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <PreferenceCategory android:title="마이페이지">
         <Preference
             app:fragment="com.example.SyncFragment"
             android:key="Log"
-            android:title="계정 설정"/>
+            android:title="계정 관리"/>
         <!--계정 -> 프로필(견주, 반려동물)변경, 로그아웃, 탈퇴-->
         <Preference
         app:fragment="com.example.SyncFragment"
@@ -15,27 +15,14 @@
         <Preference
             app:fragment="com.example.SyncFragment"
             android:key="Friend"
-            android:title="친구 목록"/>
+            android:title="친구 관리"/>
             <!--친구 -> 추가/삭제, 검색-->
         <Preference
             app:fragment="com.example.SyncFragment"
             android:key="Alarm"
-            android:title="푸시알림 설정"/>
+            android:title="알림 설정"/>
             <!--알림 -> 알림on/off, 알림 on 시 소리, 진동설정,
                         각종 알림on/off(ex/커뮤니티글 관련,친구 관련 등등)-->
-        <!--하단 내용은 알림 내부로 들어가야 함!-->
-<!--        <CheckBoxPreference-->
-<!--            android:title="알림 설정"-->
-<!--            android:defaultValue="false"-->
-<!--            android:key="Ringing"/>-->
-<!--        <SwitchPreference-->
-<!--            android:key="sound"-->
-<!--            android:title="소리"-->
-<!--            android:dependency="Ringing"/>-->
-<!--        <SwitchPreference-->
-<!--            android:key="message"-->
-<!--            android:title="진동"-->
-<!--            android:dependency="Ringing"/>-->
     </PreferenceCategory>
     <PreferenceCategory android:title="앱 정보">
         <Preference
@@ -46,4 +33,4 @@
             android:key="version"
             android:title="앱 버전"></Preference>
     </PreferenceCategory>
-</PreferenceScreen>
+</androidx.preference.PreferenceScreen>
